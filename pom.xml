@@ -6,11 +6,22 @@
 	<packaging>pom</packaging>
 	<name>com.platform.commons</name>
 	<description>com.platform.commons</description>
+	<distributionManagement>
+		<repository>
+			<id>localRepository</id>
+			<url>file:H:\maven\mavenRepository</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
 			<version>3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.dom4j</groupId>
@@ -58,6 +69,7 @@
 			<version>1.2.3</version>
 		</dependency>
 	</dependencies>
+
 	<modules>
 		<module>platfor-common-utils</module>
 	</modules>
